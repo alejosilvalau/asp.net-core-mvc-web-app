@@ -1,7 +1,5 @@
-namespace FinanceApp.Models
-{
-  public class ErrorViewModel
-  {
+namespace FinanceApp.Models {
+  public class ErrorViewModel {
     public string? RequestId { get; set; }
 
     public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);

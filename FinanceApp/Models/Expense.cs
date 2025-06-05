@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FinanceApp.Models
-{
-  public class Expense
-  {
+namespace FinanceApp.Models {
+  public class Expense {
     public int Id { get; set; }
     [Required]
     public string Description { get; set; } = string.Empty;
