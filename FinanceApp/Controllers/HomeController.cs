@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using asp.net_core_mvc_web_app.Models;
+using FinanceApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace asp.net_core_mvc_web_app.Controllers
+namespace FinanceApp.Controllers
 {
     public class HomeController : Controller
     {

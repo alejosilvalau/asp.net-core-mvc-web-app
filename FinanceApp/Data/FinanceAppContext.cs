@@ -1,7 +1,7 @@
-﻿using asp.net_core_mvc_web_app.Models;
+﻿using FinanceApp.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace asp.net_core_mvc_web_app.Data
+namespace FinanceApp.Data
 {
   public class FinanceAppContext : DbContext
   {
