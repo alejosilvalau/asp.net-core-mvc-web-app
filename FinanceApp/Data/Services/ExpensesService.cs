@@ -1,4 +1,5 @@
 ﻿using FinanceApp.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinanceApp.Data.Services {
   public class ExpensesService : IExpensesService {
@@ -7,12 +8,14 @@ namespace FinanceApp.Data.Services {
       _context = context;
     }
 
-    public Task Add(Expense expense) {
-      throw new NotImplementedException();
+    public async Task Add(Expense expense) {
+      _context.Expenses.Add(expense);
+      await _context.SaveChangesAsync();
     }
 
-    public Task<IEnumerable<Expense>> GetAll() {
-      throw new NotImplementedException();
+    public async Task<IEnumerable<Expense>> GetAll() {
+      var expenses = await _context.Expenses.ToListAsync();
+      return expenses;
     }
   }
 }
