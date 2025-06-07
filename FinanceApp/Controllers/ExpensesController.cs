@@ -14,7 +14,9 @@ namespace FinanceApp.Controllers {
       var expenses = await _expensesService.GetAll();
       return View(expenses);
     }
-
+    public IActionResult Create() {
+      return View();
+    }
 
     [HttpPost]
     public async Task<IActionResult> Create(Expense expense) {
